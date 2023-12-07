@@ -157,7 +157,7 @@ This notebook contains code for extracting data from the Youtube website. To use
 
 **Notes:** When using the Youtube API, please refer to the guide below for additional resources for help.
 ## Usage
-After running each notebook, save the outputs in their respective folders. Ensure correct placement of files for seamless operation of the EDA pipeline.
+After running each notebook, save the outputs in their respective folders. Ensure correct placement of files for seamless operation of the EDA and models.
 
 ## Dependencies
 - Python 3.8+
