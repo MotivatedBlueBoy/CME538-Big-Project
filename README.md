@@ -8,8 +8,8 @@ This repository contains the following components:
 - **Jupyter Notebooks Data Extraction**: Four notebooks each with a specific purpose in the data extraction
 - **Data Folders**: Two folders - 'Yearly' and 'AdditionalData' for organized data storage. 
 - **Outputs data**: There is a 'final_data_processed.csv' at the folder. This data is only used for the EDA.
-- **Jupyter Notebooks Analysis**: Two notebooks each with different model (rfr, gbr) and one notebook for EDA (It is only purpose is visual, the model are the decided changes)
-- **Additional resources**: 'GoogleNews-vector-negative300.bin' allows for one of more processes (word embedding). Please go to this https://github.com/mmihaltz/word2vec-GoogleNews-vectors to download it.
+- **Jupyter Notebooks Analysis**: Two notebooks each with a different model (rfr, gbr) and one notebook for EDA (It is only purpose is visual, the model are the decided changes)
+- **Additional resources**: 'GoogleNews-vector-negative300.bin' allows for one of our processes (word embedding). Please go to this https://github.com/mmihaltz/word2vec-GoogleNews-vectors to download it.
 ## Jupyter Notebooks Data Extraction
 ### TMDB Yearly Data Extractor.ipynb
 - **Purpose**: Extracting data from the TMDB website
@@ -155,13 +155,13 @@ This notebook contains code for extracting data from the Youtube website. To use
 
 6. **Comments**: The comment count of the youtube video
 
-7. **Top 10 Comments**: The top 10 comment is the video separted by '|,'
+7. **Top 10 Comments**: The top 10 comment is the video separated by '|,'
 
 ### Movie_revenue_predictor-rfr.ipynb
 
 **Variable Adjustment:** Modify the data within Yearly and Additional Data. To let in the model take in the specific data you are interested in.
 
-**Output:** The result will be model and multiple graphs showing the features performances.
+**Output:** The result will be a model and multiple graphs showing the feature's performance.
 
 
 ### Movie_revenue_predictor-gbr.ipynb
