@@ -172,7 +172,7 @@ This notebook contains code for extracting data from the Youtube website. To use
 **Notes:** When using the Youtube API/TMDB, please refer to the guide below for additional resources for help.
 
 ## Usage
-
+Use the 4 ipynb if you want to specific a date you want to get data for. After running the data extraction, put the files in their respective folders. Run the model, and have a peek at the results!
 ## Dependencies
 
 - Python 3.8+
