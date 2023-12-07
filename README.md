@@ -7,7 +7,7 @@ The Movie Revenue Estimator is a predictive model that estimates movie revenues.
 This repository contains the following components:
 - **Jupyter Notebooks Data Extraction**: Four notebooks each with a specific purpose in the data extraction
 - **Data Folders**: Two folders - 'Yearly' and 'AdditionalData' for organized data storage. 
-- **Outputs data**: There is a 'final_data_processed.csv' at the folder. This data is only used for the EDA.
+- **Outputs data**: There is a 'final_data_processed.csv' at the folder, it is the output after cleaning the data in the model.ipynb. This data is only used for the EDA.
 - **Jupyter Notebooks Analysis**: Two notebooks each with a different model (rfr, gbr) and one notebook for EDA (It is only purpose is visual, the model are the decided changes)
 - **Additional resources**: 'GoogleNews-vector-negative300.bin' allows for one of our processes (word embedding). Please go to this https://github.com/mmihaltz/word2vec-GoogleNews-vectors to download it.
 ## Jupyter Notebooks Data Extraction
