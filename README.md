@@ -5,10 +5,12 @@ The Movie Revenue Estimator is a predictive model that estimates movie revenues.
 
 ## Repository Structure
 This repository contains the following components:
-- **Jupyter Notebooks**: Five notebooks each with a specific purpose in the data extraction and analysis process.
-- **Data Folders**: Two folders - 'Yearly' and 'AdditionalData' for organized data storage.
-
-## Jupyter Notebooks Overview
+- **Jupyter Notebooks Data Extraction**: Four notebooks each with a specific purpose in the data extraction
+- **Data Folders**: Two folders - 'Yearly' and 'AdditionalData' for organized data storage. 
+- **Outputs data**: There is a 'final_data_processed.csv' at the folder. This data is only used for the EDA.
+- **Jupyter Notebooks Analysis**: Two notebooks each with different model (rfr, gbr) and one notebook for EDA (It is only purpose is visual, the model are the decided changes)
+- **Additional resources**: 'GoogleNews-vector-negative300.bin' allows for one of more processes (word embedding). Please go to this https://github.com/mmihaltz/word2vec-GoogleNews-vectors to download it.
+## Jupyter Notebooks Data Extraction
 ### TMDB Yearly Data Extractor.ipynb
 - **Purpose**: Extracting data from the TMDB website
 - **Import Libraries**: Begins with importing necessary libraries for concurrent processing and web requests.
@@ -51,7 +53,7 @@ This notebook contains code for extracting data from the TMDB website. To use it
 
 **Variable Adjustment:** Modify the "year" variable within the code to specify the year for which you want to extract data.
 
-**Output:** The result of running this code is a CSV file named "year.csv" with the following columns: 
+**Output:** The result of running this code is a CSV file named "year.csv" with the following columns, it should be placed in the Yearly folder: 
 
 1. **adult**: Indicates if the movie content is intended for adults.
 
@@ -113,7 +115,7 @@ This notebook contains code for extracting data from the MOJO website. To use it
 
 **Variable Adjustment:** Modify the dates list within the code to specify the dates for which you want to extract data.
 
-**Output:** The result of running this code is a CSV file named "gross_earning_domestic_2013-2023.csv" with the following columns: 
+**Output:** The result of running this code is a CSV file named "gross_earning_domestic_2013-2023.csv" with the following columns, it should be placed in the Additional Data folder: 
 
 1. **movie**: The title of the movie
 
@@ -128,7 +130,7 @@ This notebook contains code for extracting data from the Rotten Tomato website. 
 
 **Variable Adjustment:** Modify the file list within the code to specify the movies you want the scores for.
 
-**Output:** The result of running this code is a CSV file named "gross_earning_domestic_2013-2023.csv" with the following columns: 
+**Output:** The result of running this code is a CSV file named "Tomato_Score" with the following columns , it should be placed in the Additional Data folder: 
 
 1. **movie**: The title of the movie
 
@@ -139,7 +141,7 @@ This notebook contains code for extracting data from the Youtube website. To use
 
 **Variable Adjustment:** Modify the '.csv' file within the code to the movies column to get the youtube data from it.
 
-**Output:** The result of running this code is a CSV file named "movies_with_engagement_and_comments" with the following columns: 
+**Output:** The result of running this code is a CSV file named "Youtube_Movie_Data" with the following columns , it should be placed in the Additional Data folder: 
 
 1. **MovieTitle**: The title of the Movie Title
 
@@ -155,24 +157,51 @@ This notebook contains code for extracting data from the Youtube website. To use
 
 7. **Top 10 Comments**: The top 10 comment is the video separted by '|,'
 
-**Notes:** When using the Youtube API, please refer to the guide below for additional resources for help.
+### Movie_revenue_predictor-rfr.ipynb
+
+**Variable Adjustment:** Modify the data within Yearly and Additional Data. To let in the model take in the specific data you are interested in.
+
+**Output:** The result will be model and multiple graphs showing the features performances.
+
+
+### Movie_revenue_predictor-gbr.ipynb
+**Variable Adjustment:** Modify the data within Yearly and Additional Data. To let in the model take in the specific data you are interested in.
+
+**Output:** The result will be model and multiple graphs showing the features performances, Same as above but different model.
+
+**Notes:** When using the Youtube API/TMDB, please refer to the guide below for additional resources for help.
+
 ## Usage
-After running each notebook, save the outputs in their respective folders. Ensure correct placement of files for seamless operation of the EDA and models.
 
 ## Dependencies
+
 - Python 3.8+
-- Pandas, NumPy, Matplotlib, Seaborn
-- API Keys for TMDB, YouTube
-- Additional libraries: (list any other specific libraries or frameworks used)
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- scikit-learn
+  - `sklearn.decomposition.PCA`
+  - `sklearn.model_selection`
+  - `sklearn.ensemble.RandomForestRegressor`
+  - `sklearn.metrics`
+  - `sklearn.feature_selection.RFECV`
+  - `sklearn.preprocessing`
+- Gensim
+  - `gensim.models.KeyedVectors`
+  - `gensim.models`
+- NLTK (Natural Language Toolkit)
+  - `nltk.sentiment.SentimentIntensityAnalyzer`
+- missingno
+- joblib
+- json
+- ast
+- collections (built-in Python module)
+
 
 ## Contact Information
-For inquiries or contributions, please contact Blueboy at ansonlam77@gmail.com
-
+For inquiries or contributions, please contact Anson at ansonlam77@gmail.com
 ## Additional Resources
-- [TMDB API Documentation](link)
-- [YouTube API Guide](link)
-- (Any other relevant links or resources)
+- [TMDB API Documentation](https://developer.themoviedb.org/reference/intro/getting-started)
+- [YouTube API Guide](https://developers.google.com/youtube/v3/docs)
 
----
-
-This format ensures that your README is informative and user-friendly, guiding users through the process of utilizing your project effectively. Don't forget to include any additional information or instructions specific to your project's requirements.
