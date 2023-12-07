@@ -165,15 +165,6 @@ After running each notebook, save the outputs in their respective folders. Ensur
 - API Keys for TMDB, YouTube
 - Additional libraries: (list any other specific libraries or frameworks used)
 
-## Installation
-Provide instructions for setting up the environment and installing necessary dependencies.
-
-## Running the Model
-Explain how users can run the model after setting up the environment and processing the data.
-
-## License
-(Include license information here.)
-
 ## Contact Information
 For inquiries or contributions, please contact Blueboy at ansonlam77@gmail.com
 
