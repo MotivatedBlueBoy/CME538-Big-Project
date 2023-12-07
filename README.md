@@ -155,24 +155,24 @@ This notebook contains code for extracting data from the Youtube website. To use
 
 6. **Comments**: The comment count of the youtube video
 
-7. **Top 10 Comments**: The top 10 comment is the video separated by '|,'
+7. **Top 10 Comments**: The top 10 comment in the video and are separated by '|,'
 
 ### Movie_revenue_predictor-rfr.ipynb
 
-**Variable Adjustment:** Modify the data within Yearly and Additional Data. To let in the model take in the specific data you are interested in.
+**Variable Adjustment:** Modify the data within Yearly and Additional Data. To let the model take in the specific data you are interested in.
 
 **Output:** The result will be a model and multiple graphs showing the feature's performance.
 
 
 ### Movie_revenue_predictor-gbr.ipynb
-**Variable Adjustment:** Modify the data within Yearly and Additional Data. To let in the model take in the specific data you are interested in.
+**Variable Adjustment:** Modify the data within Yearly and Additional Data. To let the model take in the specific data you are interested in.
 
-**Output:** The result will be model and multiple graphs showing the features performances, Same as above but different model.
+**Output:** The result will be model and multiple graphs showing the feature's performances, the Same as above but a different model.
 
 **Notes:** When using the Youtube API/TMDB, please refer to the guide below for additional resources for help.
 
 ## Usage
-Use the 4 ipynb if you want to specific a date you want to get data for. After running the data extraction, put the files in their respective folders. Run the model, and have a peek at the results!
+Use the 4 ipynb if you want to specify a date you want to get data for. After running the data extraction, put the files in their respective folders. Run the model, and have a peek at the results!
 ## Dependencies
 
 - Python 3.8+
