@@ -175,7 +175,7 @@ Explain how users can run the model after setting up the environment and process
 (Include license information here.)
 
 ## Contact Information
-For inquiries or contributions, please contact [Your Name] at [email@email.com].
+For inquiries or contributions, please contact Blueboy at ansonlam77@gmail.com
 
 ## Additional Resources
 - [TMDB API Documentation](link)
